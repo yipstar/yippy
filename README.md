@@ -10,6 +10,15 @@
 - sudo apt install ros-kinetic-opencv3
 - sudo apt install ros-kinetic-cv-bridge
 - sudo apt install ros-kinetic-video-stream-opencv
-ros-kinetic-vision-opencv
-ros-kinetic-compressed-depth-image-transport
-ros-kinetic-compressed-image-transport
+- sudo apt install ros-kinetic-image-pipeline
+- sudo apt install ros-kinetic-vision-opencv
+- sudo apt install ros-kinetic-image-transport
+- sudo apt install ros-kinetic-compressed-depth-image-transport
+- sudo apt install ros-kinetic-compressed-image-transport
+
+To launch the camera stream
+roslaunch image_stream_opencv camera.launch
+
+To view:
+rosrun image_view image_view image:=/camera/camera_raw compressed
+
