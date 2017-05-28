@@ -22,3 +22,16 @@ roslaunch image_stream_opencv camera.launch
 To view:
 rosrun image_view image_view image:=/camera/camera_raw compressed
 
+- sudo apt-get update
+- sudo apt-get install gpsd gpsd-clients python-gps
+
+https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi/use-gpsd
+- edited /etc/defaults/gpsd set the following so it uses proper device on boot:
+GPSD_OPTIONS="/dev/ttyUSB0"
+GPSD_SOCKET="/var/run/gpsd.sock"
+
+# TODO: finish setting up /fix topic messages:
+http://wiki.ros.org/gpsd_client/Tutorials/Getting%20Started%20with%20gpsd_client
+
+Setup Scanse Lidar
+https://github.com/scanse/sweep-ros
