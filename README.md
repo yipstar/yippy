@@ -35,3 +35,4 @@ http://wiki.ros.org/gpsd_client/Tutorials/Getting%20Started%20with%20gpsd_client
 
 Setup Scanse Lidar
 https://github.com/scanse/sweep-ros
+- install libsweep as described, then clone sweep-ros and catkin_make it
